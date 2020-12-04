@@ -1,0 +1,93 @@
+<div class="row h-100 no-margin">
+  <div class="col purple left">
+      <div class="row sign-section">
+          <div class="col my-auto">
+              <h5 style="font-size: 3rem" class=" mt-0 mb-0 text-light text-center mb-0 align-middle">
+                <img src="../../../assets/img/angular.png"> Logo
+                  </h5>
+          </div>
+      </div>
+  </div>
+
+  <div class="col-md right">
+      <div class="container h-100">
+          <div class="row align-items-center h-100">
+              <div class="card shadow border-0 mx-auto">
+
+                  <div class="loader h-100">
+
+                      <div class="row">
+                          <div class="card-body p-5">
+                            <div class="logo">
+                              <img src="../../../assets/img/angular2-logo.png" class="img-fluid 800" />
+                            </div>
+                              <h5 class="text-grey text-center mt-0 font-weight-bold">Sign Up</h5>
+                              <p class="text-center text-muted">Fill the following details.</p>
+                                              <div class="row mb-3 text-center">
+                              <img src="../../../assets/img/login.png" class="mx-auto text-center" height="80"/>
+                          </div>
+                              <!-- <form id="signIn"> -->
+                                  <div class="form-group p-1">
+                                      <label for="username text-muted">
+                                          <h6 class="text-grey"><i class="fa fa-user"></i> FirstName</h6>
+                                      </label>
+                                      <input name="FirstName" [(ngModel)]="register.FirstName" placeholder="Enter your FirstName" required="true" id="FirstName" type="text" class="form-control">
+                                      <div class="invalid-feedback">Please enter your FirstName</div>
+                                      <label for="username text-muted">
+                                        <h6 class="text-grey"><i class="fa fa-user"></i> LastName</h6>
+                                    </label>
+                                    <input name="LastName" [(ngModel)]="register.lastName" placeholder="Enter your LastName" required="true" id="LastName" type="text" class="form-control">
+                                    <div class="invalid-feedback">Please enter your LastName</div>
+                                    <label for="username text-muted">
+                                        <h6 class="text-grey"><i class="fa fa-user"></i>DateOfBirth</h6>
+                                    </label>
+                                    <input name="DateOfBirth" [(ngModel)]="register.DateOfBirth" placeholder="Enter your DateOfBirth" required="true" id="DateOfBirth" type="date" class="form-control">
+                                    <div class="invalid-feedback">Please enter your DateOfBirth</div>
+                                    <label for="username text-muted">
+                                        <h6 class="text-grey"><i class="fa fa-user">category</i></h6>
+                                    </label>
+                                    <select name="category" id="aantal" class="form-control" placeholder="Enter your category" [(ngModel)]="register.category">
+                                        <option *ngFor="let option of options"  [value]="option" >{{option}}</option>
+                                    </select>
+                                    <label for="username text-muted">
+                                        <h6 class="text-grey"><i class="fa fa-user"></i> PhoneNumber</h6>
+                                    </label>
+                                    <input name="PhoneNumber" [(ngModel)]="register.PhoneNumber" placeholder="Enter your PhoneNumber" required="true" id="PhoneNumber" type="number" class="form-control">
+                                    <div class="invalid-feedback">Please enter your PhoneNumber</div>
+                                    <label for="username text-muted">
+                                        <h6 class="text-grey"><i class="fa fa-user"></i> enter your email</h6>
+                                    </label>
+                                    <input name="email" [(ngModel)]="register.email" placeholder="Enter your email" required="true" id="email" type="email" class="form-control">
+                                    <div class="invalid-feedback">Please enter your email</div>
+                                      <label for="password" class="mt-4">
+                                          <h6 class="text-grey"><i class="fa fa-key"></i> Password</h6>
+                                      </label>
+                                      <input name="password" [(ngModel)]="register.Password" placeholder="Enter your password" required="true" id="password" type="password" class="form-control">
+                                      <div class="invalid-feedback">Please enter your password</div>
+                                      <label for="password" class="mt-4">
+                                          <h6 class="text-grey"><i class="fa fa-key"></i> Re-enter Password</h6>
+                                      </label>
+                                      <input name="password" [(ngModel)]="register.rePassword" placeholder="Enter your password" required="true" id="password" type="password" class="form-control">
+                                      <div class="invalid-feedback">Please enter your password</div>
+                                      <label for="password" class="mt-4">
+                                        <h6 class="text-grey"><i class="fa fa-key"></i> term && condition</h6>
+                                    </label>
+                                    <input name="term" [(ngModel)]="register.term" placeholder="Enter your term" required="true" id="term" type="checkbox" class="form-control">
+                                    <div class="invalid-feedback">Please enter your password</div>
+                                  </div>
+
+                                  <div class="row">
+                                      <button   id="submit" class="btn btn-primary mx-auto">
+                                          <span class="btn-text" (click)="submit(register)">Submit</span>
+                                      </button>
+                                  </div>
+                                  <p class="register"> Already have an account? <a (click)="gosignin()"  >Sign in</a></p>
+                              <!-- </form> -->
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
